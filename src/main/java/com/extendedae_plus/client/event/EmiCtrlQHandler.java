@@ -159,8 +159,8 @@ public final class EmiCtrlQHandler {
 		if (mc.player != null) {
 			mc.player.displayClientMessage(
 				sent > 0
-					? Component.literal("[EAP] 已发送 " + sent + " 个样板编码请求").withStyle(ChatFormatting.GREEN)
-					: Component.literal("[EAP] 合成链中没有可编码的配方").withStyle(ChatFormatting.RED),
+					? Component.translatable("message.extendedae_plus.bom_pattern_requests_sent", sent).withStyle(ChatFormatting.GREEN)
+					: Component.translatable("message.extendedae_plus.bom_no_encodable_recipes").withStyle(ChatFormatting.RED),
 				true
 			);
 		}
