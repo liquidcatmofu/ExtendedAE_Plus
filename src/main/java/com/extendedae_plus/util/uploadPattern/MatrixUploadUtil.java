@@ -160,7 +160,7 @@ public final class MatrixUploadUtil {
         }
 
         // 所有矩阵都满了
-        eap$notify(player, Component.translatable("extendedae_plus.upload_to_matrix.full"), quiet);
+        eap$notify(player, Component.translatable("extendedae_plus.upload_to_matrix.fail_full"), quiet);
         return false;
     }
 
